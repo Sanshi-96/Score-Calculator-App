@@ -1,16 +1,88 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Marks Calculator
 
-Currently, two official plugins are available:
+A simple and modern web application to calculate students’ **total and average marks** instantly. Built with **React** and **Tailwind CSS**, this app helps students save time, reduce errors, and track academic performance efficiently.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Quick total and average calculation  
+- Real-time calculation as marks are entered  
+- Clean, minimalistic, and responsive design  
+- Works on all devices (desktop, tablet, mobile)  
+- Modern UI with React and Tailwind CSS  
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Installation
+
+1. **Clone the repository**  
+```bash
+git clone https://github.com/YOUR_USERNAME/marks-calculator.git
+````
+
+2. **Navigate into the project folder**
+
+```bash
+cd marks-calculator
+```
+
+3. **Install dependencies**
+
+```bash
+npm install
+```
+
+4. **Run the app locally**
+
+```bash
+npm run dev
+```
+
+---
+
+## Usage
+
+1. Enter your **name**.
+2. Fill in the **marks for each subject**.
+3. The **total and average** are calculated instantly.
+
+---
+
+## About
+
+This app was developed to make academic calculations fast, accurate, and visually appealing. It demonstrates modern front-end development practices using React and Tailwind CSS.
+
+**Future Improvements:**
+
+* Add a grading system
+* Export results as PDF
+* Store previous results in local storage
+* Optional dark/light mode
+
+---
+
+## Contact
+
+For help or inquiries:
+
+* **Email:** [help@markscalculator.com](mailto:help@markscalculator.com)
+* **Phone:** +1 234 567 890
+
+---
+
+## Technologies Used
+
+* **React** – For building a dynamic and responsive UI
+* **Tailwind CSS** – For modern styling and layout
+* **Vite** – Fast development build tool
+
+---
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+```
