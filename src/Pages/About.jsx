@@ -8,55 +8,66 @@ import gal5 from "../assets/gal5.svg";
 
 export default function About() {
   return (
-    <section className="px-6 py-16 max-w-5xl mx-auto">
-      <h2 className="text-4xl font-bold text-center mb-8 text-blue-900">About This App</h2>
-      
-      {/* Description */}
-      <div className="space-y-6 text-gray-700 text-lg">
-        <p>
-  This Marks Calculator is designed to help students quickly calculate total and average marks, 
-  saving time and reducing errors. It provides a seamless experience across all devices with a clean, responsive layout.
-</p>
-<p>
-  <strong>Purpose:</strong> The app aims to simplify academic assessments by allowing students and teachers 
-  to enter marks and instantly view totals and averages, reducing the need for manual calculations and improving accuracy.
-</p>
-<p>
-  <strong>Key Features:</strong>
-  <ul className="list-disc ml-6 mt-2">
-    <li>Real-time calculation of total and average marks</li>
-    <li>Input validation to prevent errors</li>
-    <li>Minimalistic and intuitive interface</li>
-    <li>Responsive design suitable for desktop, tablet, and mobile devices</li>
-    <li>Lightweight and fast performance</li>
-  </ul>
-</p>
-<p>
-  <strong>Technologies Used:</strong> Built with React for dynamic user interaction and Tailwind CSS for modern, responsive styling. 
-  These choices allow for maintainable, scalable, and visually appealing design.
-</p>
-<p>
-  <strong>Future Improvements:</strong>
-  <ul className="list-disc ml-6 mt-2">
-    <li>Add a grading system to automatically categorize marks</li>
-    <li>Export results as PDF for record-keeping</li>
-    <li>Store previous results in local storage for quick reference</li>
-    <li>Implement optional dark/light mode for better user experience</li>
-  </ul>
-</p>
-<p>
-  Overall, this Marks Calculator is a practical, user-friendly tool designed to enhance academic productivity 
-  while showcasing the power of modern web technologies.
-</p>
+    <section className="relative w-full py-24 bg-linear-to-br from-purple-700 via-pink-600 to-blue-700 overflow-hidden">
 
+      {/* Top Section: Text & Cards */}
+      <div className="max-w-7xl mx-auto flex flex-col gap-12 px-6 md:px-16">
+        <h2 className="text-4xl md:text-5xl font-semibold text-white text-center">
+          About This App
+        </h2>
+        <p className="text-gray-200 text-lg md:text-xl leading-relaxed text-center max-w-3xl mx-auto">
+          The Marks Calculator helps students quickly calculate total and average marks, saving time and minimizing errors.
+          Clean, responsive, and designed for an intuitive experience across all devices.
+        </p>
+
+        {/* Key Features Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-white/40 backdrop-blur-md p-6 rounded-3xl shadow-lg">
+            <h3 className="text-white font-bold text-lg mb-2">Real-time Calculation</h3>
+            <p className="text-gray-200">See total and average instantly.</p>
+          </div>
+          <div className="bg-white/40 backdrop-blur-md p-6 rounded-3xl shadow-lg">
+            <h3 className="text-white font-bold text-lg mb-2">Error Validation</h3>
+            <p className="text-gray-200">Avoid incorrect entries with checks.</p>
+          </div>
+          <div className="bg-white/40 backdrop-blur-md p-6 rounded-3xl shadow-lg">
+            <h3 className="text-white font-bold text-lg mb-2">Responsive Design</h3>
+            <p className="text-gray-200">Works perfectly on all devices.</p>
+          </div>
+          <div className="bg-white/40 backdrop-blur-md p-6 rounded-3xl shadow-lg">
+            <h3 className="text-white font-bold text-lg mb-2">Fast & Lightweight</h3>
+            <p className="text-gray-200">Smooth performance, minimal load.</p>
+          </div>
+        </div>
+
+        {/* Future Improvements Card */}
+        <div className="bg-linear-to-r from-purple-400 via-pink-400 to-blue-400 text-white p-6 rounded-3xl shadow-lg hover:shadow-2xl  max-w-3xl mx-auto text-left">
+          <h3 className="text-2xl text-center font-semibold mb-3">Future Improvements</h3>
+          <ul className="list-disc list-inside space-y-1">
+            <li>Add grading system for auto categorization</li>
+            <li>Export results as PDF</li>
+            <li>Store previous results locally</li>
+            <li>Optional dark/light mode</li>
+          </ul>
+        </div>
       </div>
 
-      {/* Gallery Slider */}
-      <div className="mt-12">
-        <Carousel showThumbs={false} autoPlay infiniteLoop>
+      {/* Bottom Section: Full Screen Carousel */}
+      <div className="w-full mt-16 px-6 md:px-16 py-8">
+        <Carousel 
+          showThumbs={false} 
+          autoPlay 
+          infiniteLoop 
+          showStatus={false} 
+          className="w-full h-[80vh] rounded-3xl overflow-hidden"
+        >
           {[gal1, gal2, gal3, gal4, gal5].map((img, idx) => (
-            <div key={idx} className="flex justify-center">
-              <img src={img} alt={`Gallery ${idx + 1}`} className="w-3/4 md:w-1/2 max-w-xs" />
+            <div key={idx} className="w-full h-screen flex justify-center items-center bg-linear-to-tr from-purple-100 via-pink-100 to-blue-100">
+              <img 
+                src={img} 
+                alt={`Gallery ${idx + 1}`} 
+                className="h-3/4 md:h-5/6 w-auto "
+              />
             </div>
           ))}
         </Carousel>
