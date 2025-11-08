@@ -40,7 +40,7 @@ export default function Contact() {
             rows={5}
             className="bg-white/20 placeholder-white/70 text-white p-4 rounded-xl border border-transparent focus:border-gradient-to-r focus:border-purple-500 focus:ring-2 focus:ring-purple-300 focus:outline-none transition-all duration-300"
           ></textarea>
-          <button className="bg-white text-purple-700 py-3 rounded-xl font-semibold hover:scale-105 transform transition-all duration-300 shadow-md hover:shadow-lg">
+          <button className="bg-white text-purple-700 py-3 rounded-xl font-semibold shadow-md hover:shadow-lg">
             Send Message
           </button>
         </form>
@@ -54,9 +54,9 @@ export default function Contact() {
             <input
               type="email"
               placeholder="Enter your email"
-              className="bg-white/20 placeholder-white/70 text-white p-4 rounded-xl border border-transparent focus:border-gradient-to-r focus:border-blue-400 focus:ring-2 focus:ring-blue-300 focus:outline-none transition-all duration-300 w-full sm:w-80"
+              className="bg-white/20 placeholder-white/70 text-white p-4 rounded-xl border border-transparent focus:border-gradient-to-r focus:border-blue-400 focus:ring-2 focus:ring-blue-300 focus:outline-none w-full sm:w-80"
             />
-            <button className="bg-white text-purple-700 py-3 px-6 rounded-xl font-semibold hover:scale-105 transform transition-all duration-300">
+            <button className="bg-white text-purple-700 py-3 px-6 rounded-xl font-semibold">
               Subscribe
             </button>
           </div>
