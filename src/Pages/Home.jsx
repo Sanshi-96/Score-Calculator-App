@@ -1,6 +1,5 @@
 import { useState } from "react";
-import MarksGrid from "../Components/MarksGrid";
-import ResultCard from "../Components/ResultCard";
+import MarksGrid from "../components/MarksGrid";
 import HeroIllustration from "../assets/hero-illustration.svg";
 
 function Home() {

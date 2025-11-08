@@ -1,4 +1,4 @@
-import MarksInput from "./MarksInput.jsx";
+import MarksInput from "./MarksInput";
 
 
 function MarksGrid({ marks, handleChange }) {
